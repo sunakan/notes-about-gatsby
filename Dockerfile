@@ -1,2 +1,4 @@
 ARG NODE_VERSION_TAG=${NODE_VERSION_TAG}
 FROM node:${NODE_VERSION_TAG}
+
+RUN npm install -g yarn
