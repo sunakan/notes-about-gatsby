@@ -2,3 +2,8 @@
 
 - 静的サイトジェネレータ
 - 比較相手はstaticgen
+
+
+== Notes
+
+https://github.com/sunakan/notes-about-gatsby/issues/1[脳死でnpx gatsby new hogeしたら死んだ]
