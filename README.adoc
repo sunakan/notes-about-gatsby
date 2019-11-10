@@ -6,5 +6,5 @@
 
 == Notes
 
-https://github.com/sunakan/notes-about-gatsby/issues/1[脳死でnpx gatsby new hogeしたら死んだ]
-https://github.com/sunakan/notes-about-gatsby/issues/2[Dockerでyarn developしたあとに手元でlocalhost:8000にアクセスできない]
+* https://github.com/sunakan/notes-about-gatsby/issues/1[脳死でnpx gatsby new hogeしたら死んだ]
+* https://github.com/sunakan/notes-about-gatsby/issues/2[Dockerでyarn developしたあとに手元でlocalhost:8000にアクセスできない]
