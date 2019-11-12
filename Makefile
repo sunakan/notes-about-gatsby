@@ -5,4 +5,7 @@ build:
 	docker-compose build
 
 bash:
-	docker-compose run app bash
+	docker-compose run --service-ports app bash
+
+down:
+	docker-compose down

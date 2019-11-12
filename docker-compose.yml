@@ -10,5 +10,7 @@ services:
       dockerfile: Dockerfile
       args:
         - NODE_VERSION_TAG=${NODE_VERSION_TAG}
+    ports:
+      - 8000:8000
     volumes:
       - ./:/app
