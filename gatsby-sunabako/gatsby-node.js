@@ -1,6 +1,8 @@
+const path = require("path")
 // slugをとってくる
-// then -> JSON
+// then -> ルーティング生成!!
 exports.createPages = ({ graphql, actions}) => {
+  const { createPage } = actions
   return graphql(`
     {
       allWorksYaml {
@@ -12,7 +14,15 @@ exports.createPages = ({ graphql, actions}) => {
       }
     }
   `).then(result => {
-    // stringifyの引数はインデント幅
-    console.log(JSON.stringify(result, null, 4))
+    result.data.allWorksYaml.edges.map(edge => {
+      const work = edge.node
+      createPage({
+        path: `/works/${work.slug}`,
+        component: path.resolve("./src/templates/work.js"),
+        context: {
+          slug: work.slug,
+        },
+      })
+    })
   })
 }
