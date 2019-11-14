@@ -5,3 +5,4 @@ RUN npm install -g yarn
 RUN apt-get update \
   && apt-get install -y git
 RUN npm install -g gatsby-cli
+RUN yarn add gatsby-transformer-yaml

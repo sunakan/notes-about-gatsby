@@ -20,6 +20,7 @@ module.exports = {
         path: `${__dirname}/src/works.yaml`,
       },
     },
+    `gatsby-transformer-yaml`, // yamlの中身を見るためのtransformer plugin
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
