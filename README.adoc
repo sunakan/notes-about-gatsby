@@ -3,6 +3,15 @@
 - 静的サイトジェネレータ
 - 比較相手はstaticgen
 
+== 実行
+
+----
+$ make bash
+コンテナ内
+$ cd gatsby-sunabako
+$ yarn develop --host=0.0.0.0
+----
+
 
 == Notes
 
